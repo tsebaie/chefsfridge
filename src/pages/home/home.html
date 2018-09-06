@@ -7,20 +7,36 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-list>
+  <div class="imageHolder">
+    <img src="../../assets/imgs/image1.jpg" alt="Italian Trulli" class="myHeaderImage">
+</div>
+  <div class="logoHolder">
+      <img src="../../assets//imgs/logo1.PNG" alt="Italian Trulli" class="myLogoImage">
+    </div>
+<div class="signInHolder">
+    <ion-list>
 
-    <ion-item>
-      <ion-label fixed>Username</ion-label>
-      <ion-input type="text" value=""></ion-input>
-    </ion-item>
-  
-    <ion-item>
-      <ion-label fixed>Password</ion-label>
-      <ion-input type="password"></ion-input>
-    </ion-item>
-  
-  </ion-list>
+        <ion-item>
+          <ion-label floating>Email address</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label floating>Password</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
 
-  <button ion-button color="dark">Dark</button>
+        <ion-item>
+            <button ion-button color="danger" outline>Sign in</button>
+          </ion-item>
+      </ion-list>
+  </div>
+  <div class="forgotPasswordText">
+    <p> forgot password</p>
+    </div>
+    <div class="CreateAccText">
+        <p> Create account</p>
+      </div>
+
   
 </ion-content>
