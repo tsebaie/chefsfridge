@@ -14,6 +14,7 @@ import { ImagePicker } from '@ionic-native/image-picker';
 import { Crop } from '@ionic-native/crop';
 
 
+
 @NgModule({
   declarations: [
     MyApp,
