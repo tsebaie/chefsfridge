@@ -8,6 +8,10 @@ import { HomePage } from '../pages/home/home';
 import { SignupPage } from '../pages/signup/signup';
 import { ChefsFridgeProvider } from '../providers/chefs-fridge/chefs-fridge';
 import { HttpClientModule } from '@angular/common/http';
+import { SignInPage } from '../pages/sign-in/sign-in';
+import { AdminPage } from '../pages/admin/admin';
+import { ImagePicker } from '@ionic-native/image-picker';
+import { Crop } from '@ionic-native/crop';
 
 
 
@@ -15,7 +19,9 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
     MyApp,
     HomePage,
-    SignupPage
+    SignupPage,
+    SignInPage,
+    AdminPage
   ],
   imports: [
     BrowserModule,HttpClientModule ,
@@ -25,11 +31,15 @@ import { HttpClientModule } from '@angular/common/http';
   entryComponents: [
     MyApp,
     HomePage,
-    SignupPage
+    SignupPage,
+    SignInPage,
+    AdminPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    ImagePicker,
+    Crop,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ChefsFridgeProvider
   ]
