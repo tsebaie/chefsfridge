@@ -10,6 +10,7 @@ import { ChefsFridgeProvider } from '../providers/chefs-fridge/chefs-fridge';
 import { HttpClientModule } from '@angular/common/http';
 
 
+
 @NgModule({
   declarations: [
     MyApp,
