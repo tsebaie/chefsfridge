@@ -1,12 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the SignupPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { user } from '../../interfaces/user';
+import { ChefsFridgeProvider } from '../../providers/chefs-fridge/chefs-fridge';
+declare var firebase ;
 
 @IonicPage()
 @Component({
@@ -14,12 +10,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'signup.html',
 })
 export class SignupPage {
+  user = {} as user ;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private chefsFridge: ChefsFridgeProvider) {
+  signUp(user :user){
+    this.chefsFridge.SignUp(user.email ,user.password ,user.name, user.surname);
   }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad SignupPage');
-  }
-
 }

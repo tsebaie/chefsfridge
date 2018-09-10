@@ -7,6 +7,8 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { SignupPage } from '../pages/signup/signup';
 import { ChefsFridgeProvider } from '../providers/chefs-fridge/chefs-fridge';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 @NgModule({
@@ -16,7 +18,7 @@ import { ChefsFridgeProvider } from '../providers/chefs-fridge/chefs-fridge';
     SignupPage
   ],
   imports: [
-    BrowserModule,
+    BrowserModule,HttpClientModule ,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
