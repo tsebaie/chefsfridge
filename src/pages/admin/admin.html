@@ -1,0 +1,23 @@
+<!--
+  Generated template for the AdminPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>admin</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-item>
+        <ion-input type="file" [(ngModel)]="image"></ion-input>
+      </ion-item>
+  <div>
+      <button ion-button (click)="addRecipe()">ADD Recipe</button>
+  </div>
+</ion-content>
