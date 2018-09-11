@@ -25678,6 +25678,43 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
+page-home .imageHolder {
+  border: dotted 0px black;
+  position: relative;
+  top: 0%;
+  height: 10%;
+}
+
+page-home .signInHolder {
+  border: dotted 2px black;
+  border-radius: 15px;
+  position: relative;
+  top: 4%;
+  background-color: green;
+  padding: 2%;
+}
+
+page-home .logoHolder {
+  border: dotted 0px black;
+  height: 16%;
+  top: 1%;
+  background-color: white;
+  position: relative;
+  margin-left: 30%;
+}
+
+page-home .myHeaderImage {
+  height: 190%;
+}
+
+page-home .myLogoImage {
+  height: 110%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 15%;
+}
+
 page-signup .btn {
   border-radius: 25px;
   -webkit-box-shadow: 2px 15px 35px rgba(0, 0, 0, 0.35);
