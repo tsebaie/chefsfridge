@@ -1,28 +1,24 @@
 <ion-content padding >
   <div class="forms">
-  <!-- <div class="el1">
-      <button ion-button clear class="Su">Sign Up</button>
-  </div> -->
-
   <img src="../../assets/imgs/logo1.png" alt="blank">
-
-
   <ion-item class="list">
-    <ion-input type="text" placeholder="Full Names"></ion-input>
-</ion-item>
-  <ion-item class="list">
-      <ion-input type="text" placeholder="Email"></ion-input>
+    <ion-input type="text" placeholder="Name" [(ngModel)]="user.name"></ion-input>
   </ion-item>
 
   <ion-item class="list">
-      <ion-input type="password" placeholder="Password"></ion-input>
+    <ion-input type="text" placeholder="Surname" [(ngModel)]="user.surname"></ion-input>
   </ion-item>
 
-  
+  <ion-item class="list">
+      <ion-input type="text" placeholder="Email" [(ngModel)]="user.email"></ion-input>
+  </ion-item>
 
+  <ion-item class="list">
+      <ion-input type="password" placeholder="Password" [(ngModel)]="user.password"></ion-input>
+  </ion-item>
 
+  <button ion-button block class="btn" (click)="signUp(user)">Sign Up</button>
 
-  <button ion-button block class="btn">Sign Up</button>
 
   <div>
       <button class="privacy" ion-button clear>Privacy Policy</button>
